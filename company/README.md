@@ -1,18 +1,30 @@
 # Company
 
-## Purpose
+## Breadcrumb
 
-Holds company-wide doctrine for Gojen Technology: vision, founders context, governance, standards, operating model, and company-level meeting records.
+[Home](../README.md) › Company
 
-## Contents
+## Navigation Links
+
+- [Master Index](../INDEX.md)
+- [Standards](./standards/README.md)
+- [Products](../products/README.md)
+- [Templates](../templates/README.md)
+- [Dashboard](../README.md)
+
+## Parent Folder
+
+[Repository root](../README.md)
+
+## Child Folders
 
 | Folder | Description |
 | --- | --- |
 | [vision/](./vision/README.md) | Company vision and long-range intent |
 | [founders/](./founders/README.md) | Founders context and accountability |
 | [governance/](./governance/README.md) | Decision rights and governance artifacts |
-| [standards/](./standards/README.md) | Company documentation and quality standards |
-| [operating-system/](./operating-system/README.md) | How Gojen operates day to day |
+| [standards/](./standards/README.md) | Documentation and quality standards |
+| [operating-system/](./operating-system/README.md) | Operating model and rhythms |
 | [meeting-minutes/](./meeting-minutes/README.md) | Company-level meeting records |
 
 ```mermaid
@@ -25,13 +37,18 @@ flowchart TB
   Company --> Minutes["meeting-minutes"]
 ```
 
+## Purpose
+
+Hold company-wide doctrine for Gojen Technology: vision, founders context, governance, standards, operating model, and company-level meeting records.
+
 ## Owner
 
 Founder Board, stewarded by the Gojen Product Office.
 
 ## Related Documents
 
-- [Repository home](../README.md)
-- [Products](../products/README.md)
+- [Repository dashboard](../README.md)
+- [Master index](../INDEX.md)
+- [Meeting process](./standards/meeting-process.md)
+- [Repository rules](./standards/repository-rules.md)
 - [Contributing](../CONTRIBUTING.md)
-- [Templates](../templates/README.md)

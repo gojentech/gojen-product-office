@@ -1,12 +1,28 @@
 # Founders
 
+## Breadcrumb
+
+[Home](../../README.md) › [Company](../README.md) › Founders
+
+## Navigation Links
+
+- [Company](../README.md)
+- [Vision](../vision/README.md)
+- [Governance](../governance/README.md)
+- [Master Index](../../INDEX.md)
+- [Dashboard](../../README.md)
+
+## Parent Folder
+
+[company/](../README.md)
+
+## Child Folders
+
+None.
+
 ## Purpose
 
 Document founders context, roles, and accountability relevant to Gojen Technology direction.
-
-## Contents
-
-Founders-related reference materials for the Product Office and portfolio teams. Add approved founder documentation here when ready.
 
 ## Owner
 
@@ -14,7 +30,7 @@ Founder Board.
 
 ## Related Documents
 
-- [Company index](../README.md)
 - [Vision](../vision/README.md)
 - [Governance](../governance/README.md)
-- [Repository home — Founder Board](../../README.md#founder-board)
+- [Founder Board (dashboard)](../../README.md#founder-board)
+- [Repository rules](../standards/repository-rules.md)

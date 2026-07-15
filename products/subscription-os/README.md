@@ -1,10 +1,22 @@
 # Subscription OS
 
-## Purpose
+## Breadcrumb
 
-Product workspace for **Subscription OS**, covering the full documentation lifecycle from discovery through roadmap, plus decisions, risks, meetings, and assets.
+[Home](../../README.md) › [Products](../README.md) › Subscription OS
 
-## Contents
+## Navigation Links
+
+- [Products](../README.md)
+- [Templates](../../templates/README.md)
+- [Standards](../../company/standards/README.md)
+- [Master Index](../../INDEX.md)
+- [Dashboard](../../README.md)
+
+## Parent Folder
+
+[products/](../README.md)
+
+## Child Folders
 
 ### Lifecycle stages
 
@@ -47,7 +59,9 @@ flowchart LR
   D11 --> D12["12 Roadmap"]
 ```
 
-Lifecycle stages may run in parallel after early discovery; the numbering is the canonical folder order, not a strict waterfall gate.
+## Purpose
+
+Product workspace for **Subscription OS**. Sprint 1 established documentation infrastructure only — do not add product business documents here until a later sprint explicitly starts product documentation.
 
 ## Owner
 
@@ -56,7 +70,7 @@ Product Owner — Subscription OS, stewarded by the Gojen Product Office.
 ## Related Documents
 
 - [Products index](../README.md)
-- [Company](../../company/README.md)
 - [Templates](../../templates/README.md)
-- [Glossary](../../glossary/README.md)
-- [Repository home](../../README.md)
+- [Document numbering](../../company/standards/document-numbering.md)
+- [Master index](../../INDEX.md)
+- [Dashboard](../../README.md)

@@ -1,23 +1,37 @@
 # Products
 
-## Purpose
+## Breadcrumb
 
-Index all Gojen Technology product workspaces documented in the Product Office.
+[Home](../README.md) › Products
 
-## Contents
+## Navigation Links
+
+- [Master Index](../INDEX.md)
+- [Company](../company/README.md)
+- [Templates](../templates/README.md)
+- [Glossary](../glossary/README.md)
+- [Dashboard](../README.md)
+
+## Parent Folder
+
+[Repository root](../README.md)
+
+## Child Folders
 
 | Product | Path | Notes |
 | --- | --- | --- |
-| Subscription OS | [subscription-os/](./subscription-os/README.md) | Full lifecycle structure initialized |
-| Pawn Management | [pawn-management/](./pawn-management/README.md) | Product workspace initialized |
+| Subscription OS | [subscription-os/](./subscription-os/README.md) | Lifecycle structure ready; no product docs in Sprint 1 |
+| Pawn Management | [pawn-management/](./pawn-management/README.md) | Workspace initialized |
 
 ```mermaid
 flowchart LR
   Products["products/"] --> SOS["subscription-os"]
   Products --> Pawn["pawn-management"]
-  SOS --> Lifecycle["01–12 lifecycle stages"]
-  SOS --> Ops["decision-log / risk-register / meeting-minutes / assets"]
 ```
+
+## Purpose
+
+Index all Gojen Technology product workspaces documented in the Product Office.
 
 ## Owner
 
@@ -25,7 +39,9 @@ Gojen Product Office.
 
 ## Related Documents
 
-- [Repository home](../README.md)
+- [Repository dashboard](../README.md)
+- [Master index](../INDEX.md)
 - [Company](../company/README.md)
 - [Templates](../templates/README.md)
 - [Glossary](../glossary/README.md)
+- [Repository rules](../company/standards/repository-rules.md)
