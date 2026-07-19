@@ -1,0 +1,23 @@
+# Story 002 — Drafts Working Area
+
+| Field | Value |
+| --- | --- |
+| Document Name | Story 002 Drafts Working Area |
+| Version | 1.0.0 |
+| Status | Active |
+| Owner | See parent story README |
+| Created Date | 2026-07-19 |
+| Last Updated | 2026-07-19 |
+| Purpose | Store in-progress drafts. Do not treat drafts as Board-approved until moved to outputs/ and DoD is met. |
+| Related Documents | [../README.md](../README.md), [SPR-001.md](../../SPR-001.md) |
+
+## Navigation
+
+| Link | Target |
+| --- | --- |
+| Parent Document | [Story README](../README.md) |
+| Back to START-HERE | [START-HERE.md](../../../../../company/START-HERE.md) |
+
+## Contents
+
+Add Markdown (and approved assets) for **Competitor Analysis & Pricing Research** in this folder. Keep filenames kebab-case.

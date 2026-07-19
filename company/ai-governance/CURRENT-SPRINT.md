@@ -50,13 +50,15 @@ Validate the Subscription OS opportunity and define the MVP.
 
 ## Objectives
 
-1. Customer interviews
-2. Competitor research
-3. Pricing validation
-4. User personas
-5. Business model
-6. Customer journey
-7. MVP scope
+1. Customer discovery and market validation (Story 001)
+2. Competitor analysis and pricing research (Story 002)
+3. Product vision (Story 003)
+4. User personas (Story 004)
+5. Customer journey mapping (Story 005)
+6. Operational workflow design (Story 006)
+7. MVP scope for Founder Board approval
+
+Discovery sequence: **market → product → experience → operations**.
 
 ---
 
@@ -76,7 +78,7 @@ Validate the Subscription OS opportunity and define the MVP.
 
 | Need | Document |
 | --- | --- |
-| Product backlog (stories) | [products/subscription-os/backlog/SPR-001.md](../../products/subscription-os/backlog/SPR-001.md) |
+| Product backlog (stories) | [products/subscription-os/backlog/SPR-001.md](../../products/subscription-os/backlog/SPR-001.md) (index → story folders) |
 | Product roadmap | [subscription-os-roadmap.md](../roadmaps/subscription-os-roadmap.md) |
 | Company roadmap | [company-roadmap.md](../roadmaps/company-roadmap.md) |
 | GAIOS adoption decision (DEC-001) | [DEC-001-GAIOS-Adoption.md](../decision-register/DEC-001-GAIOS-Adoption.md) |
