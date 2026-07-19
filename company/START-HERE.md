@@ -4,16 +4,16 @@
 | --- | --- |
 | Document ID | GOS-GPO-001 |
 | Document Name | GAIOS Master Entry Point |
-| Version | 1.0.0 |
+| Version | 1.1.0 |
 | Status | Approved |
 | Owner | Gomathi K (Founder & CEO) |
 | Reviewer | Gowtham (Co-Founder), Arul Jeni (Co-Founder) |
 | Approver | Founder Board |
 | Created Date | 2026-07-18 |
-| Last Updated | 2026-07-18 |
+| Last Updated | 2026-07-19 |
 | Purpose | Master entry point for GAIOS v1.0 — vision, navigation, and AI onboarding |
 | Scope | All Gojen Technology Product Office contributors and AI collaborators |
-| Related Documents | [INDEX.md](./INDEX.md), [SEARCH.md](./SEARCH.md), [ai-governance/README.md](./ai-governance/README.md), [memory/README.md](./memory/README.md) |
+| Related Documents | [INDEX.md](./INDEX.md), [SEARCH.md](./SEARCH.md), [CURRENT-SPRINT.md](./ai-governance/CURRENT-SPRINT.md), [SPR-001 backlog](../products/subscription-os/backlog/SPR-001.md) |
 
 ## Navigation
 
@@ -53,6 +53,8 @@ GAIOS does not replace the existing Product Office standards ([GPO-STD-001](./st
 | AI session rules and workflow | [ai-governance/](./ai-governance/README.md) |
 | Company / product / founder memory | [memory/](./memory/README.md) |
 | Current sprint focus | [CURRENT-SPRINT.md](./ai-governance/CURRENT-SPRINT.md) |
+| Subscription OS discovery backlog | [SPR-001.md](../products/subscription-os/backlog/SPR-001.md) (index → story folders) |
+| Sprint history / archives | [sprints/](./sprints/README.md) |
 | Founder board summary | [FOUNDER-BOARD-PACK.md](./ai-governance/FOUNDER-BOARD-PACK.md) |
 | Existing Product Office standards | [standards/](./standards/README.md) |
 
@@ -69,10 +71,11 @@ GAIOS does not replace the existing Product Office standards ([GPO-STD-001](./st
 Follow [AI-SESSION-CHECKLIST.md](./ai-governance/AI-SESSION-CHECKLIST.md). In summary:
 
 1. START-HERE → AI-CONTEXT → CURRENT-SPRINT
-2. Load relevant memory files
-3. Apply AI-RULES and PROMPT-STANDARDS
-4. Reference existing GPO-STD standards before creating or changing artifacts
-5. Commit outcomes only when a human explicitly requests a commit
+2. For product discovery work, open [SPR-001.md](../products/subscription-os/backlog/SPR-001.md) and the matching story folder
+3. Load relevant memory files
+4. Apply AI-RULES and PROMPT-STANDARDS
+5. Reference existing GPO-STD standards before creating or changing artifacts
+6. Commit outcomes only when a human explicitly requests a commit
 
 ---
 
@@ -103,18 +106,17 @@ flowchart TD
 
 ---
 
-## 4. Planned GAIOS repository structure
+## 4. GAIOS repository structure
 
-The diagram below shows the **planned** GAIOS folder map under `company/` and related product/agent surfaces. Some folders are established in this foundation sprint; others may be created by sibling workstreams. Treat the map as the target architecture for GAIOS v1.0.
+GAIOS Foundation is **Completed** ([SPR-000 archive](./sprints/SPR-000-GAIOS-Foundation.md); [DEC-001](./decision-register/DEC-001-GAIOS-Adoption.md)). The map below is the live operating layout.
 
 ```mermaid
 flowchart TB
   subgraph company["company/"]
     SH[START-HERE.md]
-    IX[INDEX.md]
-    SE[SEARCH.md]
     AG[ai-governance/]
     MEM[memory/]
+    SP[sprints/]
     FW[founder-workspaces/]
     DB[dashboards/]
     RM[roadmaps/]
@@ -122,45 +124,36 @@ flowchart TB
     RS[research/]
     DR[decision-register/]
     RR[risk-register/]
-    TP[templates/]
-    PL[prompt-library/]
-    PB[playbooks/]
-    GV[governance/ — GAIOS additions]
-    WK[wiki/]
+    CP[products/ portfolio]
     LN[learning/]
-    QL[quality/]
-    VR[versions/]
     AGENTS[agents/]
   end
 
   subgraph products_root["products/"]
     SOS[subscription-os/]
+    BL[backlog/SPR-001 + story folders]
     PAW[pawn-management/]
   end
 
   SH --> AG
-  SH --> MEM
-  SH --> FW
-  SH --> DB
-  AG --> TP
-  AG --> PL
-  AG --> PB
-  MEM --> WK
-  MEM --> LN
+  SH --> SP
+  AG --> CS[CURRENT-SPRINT.md]
+  CS --> BL
+  SP --> Arch[SPR-000 archive]
   products_root --> SOS
+  SOS --> BL
   products_root --> PAW
-  DR -.-> SOS
-  RR -.-> SOS
 ```
 
 | Folder | Role in GAIOS |
 | --- | --- |
-| `ai-governance/` | Rules, workflows, standards, matrices, changelog |
+| `ai-governance/` | Rules, workflows, standards, matrices, changelog, **CURRENT-SPRINT** |
+| `sprints/` | Permanent sprint archives (e.g. SPR-000 Foundation) |
 | `memory/` | Durable company, product, business, technology, founder, and meeting context |
 | `founder-workspaces/` | Per-founder working notes and packs |
 | `dashboards/` | Status and health views |
 | `roadmaps/` | Company and cross-product roadmap views |
-| `meetings/` | Meeting agendas, outcomes, and links to minutes |
+| `meetings/` | Cadence, agendas, action registers |
 | `research/` | Cross-product research briefs |
 | `decision-register/` | Company-level decision index |
 | `risk-register/` | Company-level risk index |
@@ -169,10 +162,11 @@ flowchart TB
 | `playbooks/` | Repeatable operating playbooks |
 | `governance/` | Additions to existing governance (do not overwrite existing README) |
 | `wiki/` | Living knowledge articles |
-| `learning/` | Retrospectives and learning logs |
+| `learning/` | Onboarding, curriculum, retrospectives |
 | `quality/` | Quality gates and review criteria |
 | `versions/` | GAIOS version history and release notes |
-| `products/` | Product workspaces (existing SSOT for product artifacts) |
+| `company/products/` | GAIOS portfolio summaries (link to root `products/`) |
+| `products/` (root) | Authoritative product workspaces and sprint story folders |
 | `agents/` | Agent role definitions and runbooks |
 
 ---
@@ -181,8 +175,12 @@ flowchart TB
 
 | Product | Status | Path |
 | --- | --- | --- |
-| Subscription OS | Primary product; lifecycle folders ready | [products/subscription-os/](../products/subscription-os/README.md) |
-| Pawn Management | Workspace ready | [products/pawn-management/](../products/pawn-management/README.md) |
+| Subscription OS | Primary; **SPR-001 Discovery Active** | [products/subscription-os/](../products/subscription-os/README.md) · [backlog/SPR-001.md](../products/subscription-os/backlog/SPR-001.md) |
+| Pawn Management | Workspace ready; capacity-capped during SOS discovery | [products/pawn-management/](../products/pawn-management/README.md) |
+
+### Subscription OS discovery (SPR-001)
+
+Work flows **market → product → experience → operations**. Use [SPR-001.md](../products/subscription-os/backlog/SPR-001.md) as the index; commit research and outputs inside each story folder (`story-001-…` through `story-006-…`).
 
 ---
 
@@ -206,8 +204,10 @@ GAIOS standards in `ai-governance/` (GOS-GPO-025 through GOS-GPO-028) **extend**
 
 | Item | Value |
 | --- | --- |
-| GAIOS version | 1.0.0 |
-| Current sprint | [SPR-001 SubscriptionOS Discovery](./ai-governance/CURRENT-SPRINT.md) · [backlog](../products/subscription-os/backlog/SPR-001.md) |
+| GAIOS version | 1.0.0 (Foundation Completed) |
+| Current sprint | [SPR-001 SubscriptionOS Discovery](./ai-governance/CURRENT-SPRINT.md) · [backlog index](../products/subscription-os/backlog/SPR-001.md) |
+| Prior sprint | [SPR-000 GAIOS Foundation](./sprints/SPR-000-GAIOS-Foundation.md) — Completed |
+| Board adoption | [DEC-001](./decision-register/DEC-001-GAIOS-Adoption.md) |
 | Change history | [ai-governance/CHANGELOG.md](./ai-governance/CHANGELOG.md) |
 | Steward | Gojen Product Office under Founder Board |
 
@@ -217,6 +217,9 @@ GAIOS standards in `ai-governance/` (GOS-GPO-025 through GOS-GPO-028) **extend**
 
 - [Document index](./INDEX.md)
 - [Search guide](./SEARCH.md)
+- [Current sprint](./ai-governance/CURRENT-SPRINT.md)
+- [SPR-001 discovery backlog](../products/subscription-os/backlog/SPR-001.md)
+- [Sprint archives](./sprints/README.md)
 - [AI governance hub](./ai-governance/README.md)
 - [Memory hub](./memory/README.md)
 - [Founder board pack](./ai-governance/FOUNDER-BOARD-PACK.md)
@@ -248,7 +251,7 @@ GAIOS standards in `ai-governance/` (GOS-GPO-025 through GOS-GPO-028) **extend**
 | Versions | [versions/](./versions/README.md) | GAIOS version history and upgrade path |
 | Products | [products/](./products/README.md) | GAIOS portfolio layer (links to root products/) |
 | Agents | [agents/](./agents/README.md) | AI agent registry |
-| Sprints | [sprints/](./sprints/README.md) | Permanent sprint folders; CURRENT-SPRINT is pointer only |
+| Sprints | [sprints/](./sprints/README.md) | Permanent sprint archives; active work in CURRENT-SPRINT + product backlog |
 | Deliverable | [GAIOS-V1-DELIVERABLE.md](./GAIOS-V1-DELIVERABLE.md) | v1.0 acceptance package |
 
-Full inventory: [INDEX.md](./INDEX.md) (230 documents).
+Full inventory: [INDEX.md](./INDEX.md).
