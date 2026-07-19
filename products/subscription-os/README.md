@@ -39,6 +39,7 @@
 
 | Folder | Description |
 | --- | --- |
+| [backlog/](./backlog/README.md) | Sprint backlogs (active: [SPR-001](./backlog/SPR-001.md)) |
 | [decision-log/](./decision-log/README.md) | Product decisions and rationale |
 | [risk-register/](./risk-register/README.md) | Risks, owners, and mitigation |
 | [meeting-minutes/](./meeting-minutes/README.md) | Product meeting records |
